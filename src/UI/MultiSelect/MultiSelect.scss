@@ -1,0 +1,55 @@
+.multi-select {
+    position: relative;
+
+    .select {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid rgb(151, 151, 151);
+        box-shadow: 0px 5px 5px rgb(223, 223, 223);
+        display: grid;
+
+        .option {
+            padding: 3px 10px;
+            cursor: pointer;
+
+            &.selected {
+                background-color: rgb(94, 94, 255);
+                color: white;
+            }
+
+            &:hover {
+                background-color: rgb(66, 85, 255);
+                color: white;
+            }
+
+        }
+    }
+}
+
+.selected-groups {
+    display: flex;
+    column-gap: 10px;
+    padding: 5px;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 5px;
+    min-height: 40px;
+
+    .selected-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(228, 228, 228);
+        padding: 0px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover,
+        &:focus {
+            background-color: rgb(190, 190, 190);
+        }
+    }
+}

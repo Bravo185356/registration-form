@@ -1,0 +1,26 @@
+.gender {
+    display: flex;
+    column-gap: 20px;
+
+    & .gender-block {
+        display: flex;
+        column-gap: 7px;
+    }
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(151, 151, 151);
+
+    .input-field {
+        border: 0;
+        padding: 10px 0px;
+        height: 100%;
+    }
+}
+
+.input-radio {
+    width: 20px;
+    height: 20px;
+}
